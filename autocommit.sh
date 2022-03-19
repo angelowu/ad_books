@@ -17,8 +17,8 @@ remark=$(date +"%Y-%m-%d %H:%M:%S")
 
 echo -e "\n\nstart commit......"
 git commit -m "${remark} - ${desc}"
-git pull origin master
-git push origin master
+git pull origin main
+git push origin main
 
 if [ $? -eq 0 ]; then
     echo -e "\n\nFinished"
